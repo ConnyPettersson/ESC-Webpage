@@ -1,0 +1,13 @@
+{
+  "name": "test-231026",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass:compile": "sass --no-source-map src/main.scss main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
