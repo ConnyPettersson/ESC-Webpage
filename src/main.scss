@@ -1,7 +1,10 @@
-html {
-  background-color: antiquewhite;
+@font-face {
+  font-family: Roboto;
+  src: url(images/Roboto-Regular.ttf);
 }
 
 body {
-  background-color: aliceblue;
+  box-sizing: border-box;
+  margin: auto 0;
+  font-family: "roboto", sans-serif;
 }
