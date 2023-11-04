@@ -84,13 +84,19 @@ h1 {
 
   }
 
+
   ul li {
     margin-left: 50px;
     display: inline;
     margin-right: 85px;
+  }
 
+  .ulTop li:hover {
+    color: #8ACFE5;
   }
 }
+
+
 
 .image_2 {
   height: 274px;
@@ -505,6 +511,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-bottom: 98px;
 }
 
 .image_5 {
@@ -583,7 +590,7 @@ h3 {
 
 
 .seeAllButton {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 308px;
   height: 66px;
   background-color: #E3170A;
@@ -592,6 +599,7 @@ h3 {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 
@@ -662,6 +670,134 @@ h3 {
     grid-column: 2 / span 1;
     width: 50vw;
   }
+}
 
+
+.footer {
+  background-color: #011827;
+  color: #FFFFFF;
+  height: 566px;
+  margin-top: 98px;
+}
+
+.part1 {
+  margin-top: 64px;
+  margin-right: 20px;
+
+}
+
+
+.footerTitle,
+.siteMap,
+.followUs {
+  font-weight: 700;
+}
+
+
+.latinText_4 {
+  font-weight: 400;
+  margin-top: 7px;
+
+}
+
+
+.footerTitle,
+.latinText_4,
+.siteMap,
+.followUs {
+  font-size: 18px;
+  margin-left: 22px;
+  margin-bottom: 0;
+}
+
+.siteMap {
+  margin: 40px 0 7px 22px;
+}
+
+
+.footer ul {
+  margin-left: 22px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+
+.footer a {
+  display: block;
+  padding: 0;
+}
+
+
+.siteMapList_1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+
+.followUs {
+  margin-top: 47px;
+  margin-bottom: 0;
+}
+
+
+.socialMedia ul {
+  margin-top: 7px;
+  padding: 0;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 467px;
+    align-items: center;
+  }
+
+  .part1 {
+    width: 450px;
+    margin-left: 88px;
+    margin-top: 0px;
+    text-align: start;
+    align-self: center;
+  }
+
+  .part2 {
+    display: inline;
+    margin-left: 100px;
+    align-self: center;
+  }
+
+  .siteMap {
+    display: block;
+    align-self: center;
+  }
+
+  .siteMapList_1 {
+    display: block;
+  }
+
+  .siteMapList_2 {}
+
+  .part3 {
+    display: inline;
+    margin-left: 100px;
+    align-self: flex-start;
+    margin-top: 130px;
+
+  }
+
+  .footer ul {}
+
+  .footer li {
+    margin: 0;
+    padding: 0;
+  }
 
 }
