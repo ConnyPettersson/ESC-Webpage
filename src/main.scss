@@ -87,7 +87,21 @@ h1 {
   ul li {
     margin-left: 50px;
     display: inline;
-    margin-right: 90px;
+    margin-right: 85px;
 
+  }
+}
+
+.image_2 {
+  height: 274px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1280px) {
+  .image_2 {
+    height: 468px;
   }
 }
