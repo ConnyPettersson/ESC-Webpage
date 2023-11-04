@@ -83,6 +83,28 @@ h1 {
     color: #8ACFE5;
   }
 }
+@media screen and (min-width: 880px) {
+  .navTop {
+    grid-row: 2;
+    grid-column: 2/10;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ulTop {
+    list-style-type: none;
+    font-weight: 700;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+  ul li {
+    margin-left: 0px;
+    display: inline;
+    margin-right: 55px;
+  }
+  .ulTop li:hover {
+    color: #8ACFE5;
+  }
+}
 .image_2 {
   height: 274px;
   margin: 0;
@@ -673,6 +695,12 @@ h3 {
     align-self: flex-start;
     margin-top: 130px;
   }
+  .footer li {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 880px) {
   .footer li {
     margin: 0;
     padding: 0;
