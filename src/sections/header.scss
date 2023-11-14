@@ -1,0 +1,32 @@
+.header {
+  background-color: $c-darkblue;
+  padding-top: 0.4rem;
+  padding-left: 1.4rem;
+  padding-bottom: 1rem;
+
+
+  * {
+    color: white;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__image {
+    width: 128px;
+    height: 82px;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    width: 120px;
+  }
+}
+
+
+.navbar {
+  display: none;
+}

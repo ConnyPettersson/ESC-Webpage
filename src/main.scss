@@ -1,11 +1,38 @@
-* {
-  font-family: Roboto;
+// Reset default styles
+html,
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+//Variables
+$c-darkblue: #011827;
+$c-mediumblue: #36769D;
+$c-lightblue: #8ACFE5;
+$c-gray: #B6BDB5;
+$c-red: #E3170A;
+
+@import 'sections/header.scss';
+
+@mixin font-regular {
+  font-family: 'Roboto';
   src: url(images/Roboto-Regular.ttf);
-  /* font-size: 24px; */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  @include font-regular;
+  font-weight: bold;
+}
+
+@mixin font-italic {
+  @include font-regular;
+  font-weight: italic;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: 'Roboto';
   src: url(images/Roboto-Regular.ttf);
 }
 
@@ -13,19 +40,19 @@ body {
   margin: auto 0;
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
-  width: 100vw;
+  /*   width: 100vw; */
 }
 
 
 
-.container {
+/* .header {
   background-color: #011827;
   width: 100vw;
   height: 144px;
   box-sizing: border-box;
-}
+} */
 
-.main {
+/* .main {
   display: flex;
   flex-direction: row;
 }
@@ -34,20 +61,20 @@ body {
   width: 128px;
   height: 82px;
   border-radius: 17px;
-  padding-top: 27px;
+   padding-top: 27px;
   padding-left: 27px;
-}
+} */
 
-h1 {
+/* h1 {
   color: #FFFFFF;
-  margin-top: 27px;
+   margin-top: 27px;
   width: 78px;
   height: 84px;
-  padding-left: 13px;
+   padding-left: 13px;
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 0;
-}
+} */
 
 @media screen and (min-width: 900px) {
   .container {
@@ -476,6 +503,7 @@ h2 {
 
 .roomCard_1 {
   margin-left: 42px;
+
 }
 
 .roomCard_2,
@@ -496,6 +524,7 @@ h2 {
   width: 363px;
   height: 219px;
   border-radius: 8px 8px 0px 0px;
+  vertical-align: bottom;
 }
 
 .ratingBox {
@@ -504,7 +533,8 @@ h2 {
   height: 227px;
   width: 363px;
   box-shadow: 0px 0px 3px 0px rgba(146, 137, 137, 0.75);
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
 }
 
 h3 {
