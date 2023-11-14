@@ -11,8 +11,9 @@ $c-mediumblue: #36769D;
 $c-lightblue: #8ACFE5;
 $c-gray: #B6BDB5;
 $c-red: #E3170A;
+$b-medium: 900px;
 
-@import 'sections/header.scss';
+
 
 @mixin font-regular {
   font-family: 'Roboto';
@@ -31,6 +32,12 @@ $c-red: #E3170A;
   font-weight: italic;
 }
 
+@mixin medium-screen {
+  @media screen and (min-width: $b-medium) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(images/Roboto-Regular.ttf);
@@ -40,10 +47,10 @@ body {
   margin: auto 0;
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
-  /*   width: 100vw; */
+  width: 100vw;
 }
 
-
+@import 'sections/header.scss';
 
 /* .header {
   background-color: #011827;
@@ -67,16 +74,16 @@ body {
 
 /* h1 {
   color: #FFFFFF;
-   margin-top: 27px;
+  margin-top: 27px;
   width: 78px;
   height: 84px;
-   padding-left: 13px;
+  padding-left: 13px;
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 0;
 } */
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   .container {
     height: fit-content;
   }
@@ -90,7 +97,7 @@ body {
     padding-left: 24px;
     font-size: 40px;
   }
-}
+} */
 
 
 .navBar {
@@ -98,7 +105,7 @@ body {
     display: none;
   }
 
-  .navBar-links {
+  .navBar {
     display: none;
   }
 
@@ -208,7 +215,8 @@ body {
       display: none;
     }
 
-    .navBar-links ul {
+    /* 
+    .navBar__links ul {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -218,24 +226,16 @@ body {
       justify-content: space-evenly;
     }
 
-    .navBar-links {
+    .navBar__links {
       display: flex;
       margin: 0 10vw;
       font-size: 24px;
       font-weight: 700;
     }
 
-    .navBar-links.active {
-      height: 100vw;
+    
 
-    }
-
-    .navBar-links.active li {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .navBar-links li {
+    .navBar__links li {
       list-style-type: none;
       display: flex;
       margin: 20px 0;
@@ -243,19 +243,25 @@ body {
       width: fit-content;
     }
 
-    .navBar-links li a {
+    .navBar__links li a {
       text-decoration: none;
       color: #FFFFFF;
       display: block;
     }
 
-    .navBar-links li a:hover {
+    .navBar__links li a:hover {
       cursor: pointer;
       color: #8ACFE5;
+    } */
+
+    .navBar__links.active {
+      display: flex;
+      height: 100vw;
     }
 
-    .navBar-links.active {
+    .navBar__links.active li {
       display: flex;
+      flex-direction: column;
     }
 
     .close {
@@ -263,6 +269,7 @@ body {
     }
   }
 }
+
 
 
 .image_2 {
