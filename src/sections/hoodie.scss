@@ -1,0 +1,9 @@
+.hoodie__image {
+  max-width: 100%;
+
+
+  @include medium-screen {
+    /* max-height: 50vh; */
+    object-fit: cover;
+  }
+}

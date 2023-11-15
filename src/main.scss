@@ -50,6 +50,10 @@ body {
   width: 100vw;
 }
 
+img {
+  max-width: 100%;
+}
+
 @import 'sections/header.scss';
 
 /* .header {
@@ -100,7 +104,11 @@ body {
 } */
 
 
-.navBar {
+
+
+
+
+/* .navBar {
   .hamburger-links {
     display: none;
   }
@@ -208,14 +216,19 @@ body {
         color: #8ACFE5;
       }
     }
-  }
+  } */
 
-  @media screen and (min-width:900px) {
+/*   @media screen and (min-width:900px) {
     .toggleButton {
       display: none;
-    }
+    } */
 
-    /* 
+
+
+
+
+
+/* 
     .navBar__links ul {
       display: flex;
       flex-direction: row;
@@ -254,7 +267,10 @@ body {
       color: #8ACFE5;
     } */
 
-    .navBar__links.active {
+
+
+
+/*     .navBar__links.active {
       display: flex;
       height: 100vw;
     }
@@ -268,9 +284,9 @@ body {
       display: none;
     }
   }
-}
+} */
 
-
+@import 'sections/hoodie.scss';
 
 .image_2 {
   /*   background: url("images/image2mobile.png"); */
@@ -280,16 +296,16 @@ body {
   padding: 0; */
   /*  object-fit: cover; */
   /* background-size: cover; */
-  height: 274px;
+  /*  height: 274px;
   margin: 0;
   padding: 0;
   width: 100vw;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 @media screen and (min-width: 1280px) {
   .image_2 {
-    height: 468px;
+    /* height: 468px; */
   }
 
   /*   img {
