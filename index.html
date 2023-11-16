@@ -10,15 +10,16 @@
 
 </head>
 
-<body>
+<body class="navbarOpen">
 
   <header class="header">
     <div class="logo">
       <img class="logo__image" src="images/logo.png" alt="ESC-logo">
       <h1 class="logo__text">Hacker Escape Rooms</h1>
     </div>
+    <button class="header__navbarButton"></button>
     <nav class="navbar" id="navbar">
-      <!--       <div class="hamburger">
+      <!-- <div class="hamburger">
         <div class="toggleButtonBackground"></div>
         <a href="#" class="toggleButton">
           <span class="bar"></span>
@@ -234,7 +235,22 @@
       </div>
     </footer>
 
+    <script>
+      function initalizeMobileMenu() {
+        const button = document.createElement('button');
+        button.classList.add('header__navbarButton');
+        button.append(document.createElement('span'));
+        document.querySelector('#navbar').before(button);
 
+        button.addEventListener('click', () => {
+          /* document.querySelector('#navbar').classList.toggle('open'); */
+          document.body.classList.toggle('navbarOpen');
+        });
+      }
+
+
+      initalizeMobileMenu();
+    </script>
 
 
     <script src='main.js'></script>

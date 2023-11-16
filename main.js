@@ -1,5 +1,5 @@
 
-const htmlElement = document.querySelector('html');
+/* const htmlElement = document.querySelector('html');
 
 const toggleButton = document.querySelector('.toggleButton')
 const navBarLinks = document.querySelector('.hamburger-links')
@@ -19,4 +19,4 @@ function closeMenu() {
   navBarLinks.style.display = 'none';
   whiteBackGround.style.display = 'none';
   htmlElement.style.removeProperty('overflow');
-}
+} */

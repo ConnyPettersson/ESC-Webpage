@@ -216,75 +216,73 @@ img {
         color: #8ACFE5;
       }
     }
-  } */
-
-/*   @media screen and (min-width:900px) {
-    .toggleButton {
-      display: none;
-    } */
-
-
-
-
-
-
-/* 
-    .navBar__links ul {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      justify-content: space-evenly;
-    }
-
-    .navBar__links {
-      display: flex;
-      margin: 0 10vw;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    
-
-    .navBar__links li {
-      list-style-type: none;
-      display: flex;
-      margin: 20px 0;
-      transition: opacity 0.3s ease;
-      width: fit-content;
-    }
-
-    .navBar__links li a {
-      text-decoration: none;
-      color: #FFFFFF;
-      display: block;
-    }
-
-    .navBar__links li a:hover {
-      cursor: pointer;
-      color: #8ACFE5;
-    } */
-
-
-
-
-/*     .navBar__links.active {
-      display: flex;
-      height: 100vw;
-    }
-
-    .navBar__links.active li {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .close {
-      display: none;
-    }
   }
-} */
+}
+
+
+
+
+@media screen and (min-width:900px) {
+  .toggleButton {
+    display: none;
+  }
+
+
+
+  .navBar__links ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+
+  .navBar__links {
+    display: flex;
+    margin: 0 10vw;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+
+
+  .navBar__links li {
+    list-style-type: none;
+    display: flex;
+    margin: 20px 0;
+    transition: opacity 0.3s ease;
+    width: fit-content;
+  }
+
+  .navBar__links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+  }
+
+  .navBar__links li a:hover {
+    cursor: pointer;
+    color: #8ACFE5;
+  }
+
+
+  .navBar__links.active {
+    display: flex;
+    height: 100vw;
+  }
+
+  .navBar__links.active li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close {
+    display: none;
+  }
+}
+ */
 
 @import 'sections/hoodie.scss';
 
